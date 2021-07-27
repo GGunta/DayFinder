@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yab-iv-D5V">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Day Finder-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-Mg-OVK">
+                                <rect key="frame" x="73" y="86" width="228" height="60"/>
+                                <color key="backgroundColor" red="0.30013693660000001" green="0.7966579949" blue="0.72734822740000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GyE-jI-ZQl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="qwD-Mu-v6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="26"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week, inside your finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB9-gY-epd">
+                                <rect key="frame" x="57" y="331" width="261" height="82"/>
+                                <color key="backgroundColor" red="0.0" green="0.57990008589999997" blue="0.66432935000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Jod-AO-yD2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="261" id="RND-Ue-MPU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rho-wW-GNR">
+                                <rect key="frame" x="101" y="447" width="172" height="74"/>
+                                <color key="backgroundColor" red="0.15994977833830631" green="0.83762906101125345" blue="0.921620083838394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="T58-xv-1ZX">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="74"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="172" id="nuI-lK-dbL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="28"/>
+                                <state key="normal" title="FIND">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xFD-dv-WFU">
+                                <rect key="frame" x="31" y="185" width="312" height="116"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="LP0-gL-69e">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="116"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L0-WK-8Ss">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="9XZ-I1-tN2"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="ERg-A3-EgE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vma-yP-1r4">
+                                                <rect key="frame" x="0.0" y="41" width="74" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Va8-RA-FS4"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="zix-l9-aeS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0t-Wn-pID">
+                                                <rect key="frame" x="0.0" y="82" width="74" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="8g5-yf-dJc"/>
+                                                    <constraint firstAttribute="height" constant="34" id="U3Q-8n-PJf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mje-7u-71h">
+                                        <rect key="frame" x="82" y="0.0" width="230" height="116"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SA8-6M-8pb">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="34"/>
+                                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="EzG-L7-gYr"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="O60-HX-9uv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JGE-Et-QwP">
+                                                <rect key="frame" x="0.0" y="41" width="230" height="34"/>
+                                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="UUX-iA-dzw"/>
+                                                    <constraint firstAttribute="height" constant="34" id="spu-Mr-gBx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-dm-pGV">
+                                                <rect key="frame" x="0.0" y="82" width="230" height="34"/>
+                                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="1eW-RM-6hf"/>
+                                                    <constraint firstAttribute="height" constant="34" id="8bJ-NT-elN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="2PM-zj-Yh9">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="745"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="LB9-gY-epd" firstAttribute="top" secondItem="xFD-dv-WFU" secondAttribute="bottom" constant="30" id="B7r-aC-4a2"/>
+                            <constraint firstItem="xFD-dv-WFU" firstAttribute="top" secondItem="hBq-Mg-OVK" secondAttribute="bottom" constant="39" id="EfI-MW-BUV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xFD-dv-WFU" secondAttribute="trailing" constant="32" id="Gkg-ni-LNe"/>
+                            <constraint firstItem="LB9-gY-epd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="I2E-cK-knQ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                            </constraint>
+                            <constraint firstItem="hBq-Mg-OVK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="Ukr-YG-biO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hBq-Mg-OVK" secondAttribute="trailing" constant="74" id="Zvv-ME-VT5"/>
+                            <constraint firstItem="hBq-Mg-OVK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="fPf-Ef-FRk"/>
+                            <constraint firstItem="Rho-wW-GNR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="gvs-4b-6Ug"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2PM-zj-Yh9" secondAttribute="trailing" id="h55-kg-5Pp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rho-wW-GNR" secondAttribute="trailing" constant="102" id="hja-1U-blG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LB9-gY-epd" secondAttribute="trailing" constant="57" id="qy2-T1-bgP">
+                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                            </constraint>
+                            <constraint firstItem="Rho-wW-GNR" firstAttribute="top" secondItem="LB9-gY-epd" secondAttribute="bottom" constant="34" id="r9h-nI-YIN"/>
+                            <constraint firstItem="2PM-zj-Yh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uq9-JF-lpW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2PM-zj-Yh9" secondAttribute="bottom" constant="-83" id="w4T-Qj-PLr"/>
+                            <constraint firstItem="2PM-zj-Yh9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-88" id="wki-pU-j0K"/>
+                            <constraint firstItem="xFD-dv-WFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="xuT-3B-rGJ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Day Finder" id="1in-tB-mf0">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle.fill" catalog="system" id="nxx-xi-8Cd">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="moon.circle.fill" catalog="system" id="0cn-Au-A3Q">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dayTextField" destination="SA8-6M-8pb" id="3mA-Nd-BVz"/>
+                        <outlet property="monthTextField" destination="JGE-Et-QwP" id="wfF-ng-858"/>
+                        <outlet property="yearTextField" destination="xg2-dm-pGV" id="wD4-QV-ABC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="68.303571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c93-5U-k5P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yab-iv-D5V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="vCI-QK-fwZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="24"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GZ2-9O-vVU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rn3-Ol-KXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="day" width="575" height="1024"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="moon.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
