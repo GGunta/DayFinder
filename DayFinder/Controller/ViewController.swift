@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-  
+    
     @IBOutlet weak var dayTextField: UITextField!
     @IBOutlet weak var monthTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
-
+    
+    // MARK: - findWeekdayTapped
     @IBAction func findWeekdayTapped(_ sender: Any) {
         
         let calendar = Calendar.current
@@ -32,9 +32,8 @@ class ViewController: UIViewController {
             warningPopup(withTitle: "Input error!", withMessage: "Date text fields can't be empty.")
             return
         }
-                
-              
- //      dateComponents.day = Int(dayTextField.text!)
+        
+        //      dateComponents.day = Int(dayTextField.text!)
         dateComponents.day = day
         dateComponents.month = month
         dateComponents.year = year
@@ -46,7 +45,6 @@ class ViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "lv_LV")
         dateFormatter.dateFormat = "EEEE"
-        
         
         switch findButton.titleLabel?.text  {
         case "FIND":
@@ -85,6 +83,19 @@ class ViewController: UIViewController {
             self.present(popUp, animated: true, completion: nil)
         }
     }
-
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "dayFinder" {
+            let viewCont = segue.destination as! InfoViewController
+            viewCont.infoText = "DayFinder app helps you\n to find a weekday for given date"
+            viewCont.appDescText = "This is my homework project."
+        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
 }
 
