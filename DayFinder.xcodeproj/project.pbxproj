@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D19629326B3E59800C44244 /* showViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19629226B3E59800C44244 /* showViewController.swift */; };
 		8D2EAAD926B2CC510068B765 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EAAD826B2CC510068B765 /* AppearanceViewController.swift */; };
 		8D2EAADB26B2CD610068B765 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EAADA26B2CD610068B765 /* InfoViewController.swift */; };
 		8D2EAADE26B2D5EF0068B765 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EAADD26B2D5EF0068B765 /* extension.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D19629226B3E59800C44244 /* showViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showViewController.swift; sourceTree = "<group>"; };
 		8D2EAAD826B2CC510068B765 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
 		8D2EAADA26B2CD610068B765 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		8D2EAADD26B2D5EF0068B765 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				8D2EAADA26B2CD610068B765 /* InfoViewController.swift */,
+				8D19629226B3E59800C44244 /* showViewController.swift */,
 				8D3202CB26AF137E00B5FC60 /* ViewController.swift */,
 				8D2EAAD826B2CC510068B765 /* AppearanceViewController.swift */,
 			);
@@ -181,6 +184,7 @@
 				8D2EAAD926B2CC510068B765 /* AppearanceViewController.swift in Sources */,
 				8D3202CC26AF137E00B5FC60 /* ViewController.swift in Sources */,
 				8D3202C826AF137E00B5FC60 /* AppDelegate.swift in Sources */,
+				8D19629326B3E59800C44244 /* showViewController.swift in Sources */,
 				8D2EAADE26B2D5EF0068B765 /* extension.swift in Sources */,
 				8D3202CA26AF137E00B5FC60 /* SceneDelegate.swift in Sources */,
 				8D2EAADB26B2CD610068B765 /* InfoViewController.swift in Sources */,
