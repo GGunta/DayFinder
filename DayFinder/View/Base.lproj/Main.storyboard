@@ -256,7 +256,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="info.circle.fill" catalog="system" id="nxx-xi-8Cd">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
-                                <segue destination="cgH-D3-XbW" kind="push" identifier="dayFinder" id="52o-9z-c90"/>
+                                <segue destination="cgH-D3-XbW" kind="show" identifier="dayFinder" id="52o-9z-c90"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
